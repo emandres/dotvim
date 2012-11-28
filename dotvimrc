@@ -3,7 +3,9 @@ call pathogen#helptags()
 
 syntax on
 filetype plugin indent on
+
 colorscheme wombat
+hi Search guibg=#77d977 gui=none
 
 set ts=2
 set sts=2
@@ -16,8 +18,9 @@ set showcmd
 let mapleader=','
 noremap \ ,
 
-set listchars=tab:▸\ ,eol:¬
 nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+
 nmap <leader>h :set hls!<CR>
 nmap <leader>, :CtrlP<CR>
 
