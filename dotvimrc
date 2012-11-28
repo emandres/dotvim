@@ -24,6 +24,10 @@ set listchars=tab:▸\ ,eol:¬
 nmap <leader>h :set hls!<CR>
 nmap <leader>, :CtrlP<CR>
 
+nmap ,rv :Rview 
+nmap ,rm :Rmodel 
+nmap ,rc :RController 
+
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
