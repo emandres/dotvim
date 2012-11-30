@@ -7,10 +7,16 @@ filetype plugin indent on
 colorscheme wombat
 hi Search guibg=#77d977 gui=none
 
+if has("win32")
+	set gfn=Consolas:h10:cANSI
+endif
+
 set ts=2
 set sts=2
 set sw=2
 set smartindent
+
+set backspace=indent,eol,start
 
 set number
 set showcmd
@@ -19,7 +25,13 @@ let mapleader=','
 noremap \ ,
 
 nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:¬
+
+" Windows doesn't like the characters I use on Mac...
+if has("win32")
+	set listchars=tab:>\ ,eol:~
+else
+	set listchars=tab:▸\ ,eol:¬
+endif
 
 nmap <leader>h :set hls!<CR>
 nmap <leader>, :CtrlP<CR>
