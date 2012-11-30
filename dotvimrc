@@ -1,4 +1,5 @@
 set encoding=utf-8
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -8,40 +9,52 @@ filetype plugin indent on
 colorscheme wombat
 hi Search guibg=#77d977 gui=none
 
+" Windows customizations - set font to Consolas and maximize the window, since
+" GVim doesn't remember window size.
 if has("win32")
 	set gfn=Consolas:h10:cANSI
 	set lines=1000 columns=1000
 endif
 
+" Set tab width to 2
 set ts=2
 set sts=2
 set sw=2
 set smartindent
 
+" Make backspace work correctly in insert mode on Windows
 set backspace=indent,eol,start
 
+" Enable various UI elements
 set number
 set showcmd
+set ruler
 
+" Change mapleader to , and remap , to \ (the default map leader)
 let mapleader=','
 noremap \ ,
 
+" Mapping and character customization for showing invisible characters
 nmap <leader>l :set list!<CR>
-
 set listchars=tab:▸\ ,eol:¬
 
+" Various convenience mappings
 nmap <leader>h :set hls!<CR>
 nmap <leader>, :CtrlP<CR>
 
+" Convenience mappings for vim-rails
 nmap ,rv :Rview 
 nmap ,rm :Rmodel 
 nmap ,rc :Rcontroller 
 
+" Enable carriage return and space expansion for delimitMate
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
+" Enable matchit
 runtime macros/matchit.vim
 
+" Automatically source .vimrc after saving when we're editing it
 if has("autocmd")
 	autocmd! BufWritePost .vimrc source $MYVIMRC
 endif
