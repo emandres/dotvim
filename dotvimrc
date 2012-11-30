@@ -46,3 +46,6 @@ if has("autocmd")
 	autocmd! BufWritePost .vimrc source $MYVIMRC
 endif
 
+" Highlight lines that are over 120 characters
+highlight OverLength guibg=#592929
+match OverLength /\%121v.\+/
