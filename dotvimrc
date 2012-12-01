@@ -7,7 +7,6 @@ syntax on
 filetype plugin indent on
 
 colorscheme wombat
-hi Search guibg=#595929 gui=none
 
 " Windows customizations - set font to Consolas and maximize the window, since
 " GVim doesn't remember window size.
@@ -58,7 +57,3 @@ runtime macros/matchit.vim
 if has("autocmd")
 	autocmd! BufWritePost .vimrc source $MYVIMRC
 endif
-
-" Highlight lines that are over 120 characters
-highlight OverLength guibg=#592929
-match OverLength /\%121v.\+/
