@@ -57,9 +57,6 @@ runtime macros/matchit.vim
 if has("autocmd")
 	autocmd! BufWritePost .vimrc source $MYVIMRC
 endif
-<<<<<<< HEAD
 
 " Match on <> as well as the defaults
 set matchpairs+=<:>
-=======
->>>>>>> 1c4b26483052ca8d4cfc36c5f2fa739ceb01ec41
