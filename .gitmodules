@@ -24,7 +24,7 @@
 	url = https://github.com/Raimondi/delimitMate.git
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
-	url = https://github.com/bbommarito/vim-slim.git
+	url = https://github.com/slim-template/vim-slim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
