@@ -37,3 +37,15 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "bundle/hardmode"]
+	path = bundle/hardmode
+	url = https://github.com/wikitopian/hardmode.git
+[submodule "vim-ragtag"]
+	path = vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "bundle/vim-ragtag"]
+	path = bundle/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
