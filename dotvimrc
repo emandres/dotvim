@@ -45,6 +45,7 @@ nmap <leader>, :CtrlP<CR>
 nmap ,rv :Rview 
 nmap ,rm :Rmodel 
 nmap ,rc :Rcontroller 
+nmap ,ra :A<CR>
 
 " Enable carriage return and space expansion for delimitMate
 let delimitMate_expand_cr = 1
@@ -60,3 +61,6 @@ endif
 
 " Disable F1 for help in MacVim
 map <F1> <nop>
+
+" Disable all bells
+set vb t_vb=
