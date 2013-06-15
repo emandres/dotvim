@@ -60,6 +60,9 @@ if has("autocmd")
 	autocmd! BufWritePost .vimrc source $MYVIMRC
 endif
 
+" Disable F1 for help in MacVim
+map <F1> <nop>
+
 " Disable all bells
 set vb t_vb=
 
