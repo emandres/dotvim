@@ -61,3 +61,8 @@ endif
 
 " Disable all bells
 set vb t_vb=
+
+nnoremap <leader>9 :RainbowParenthesesToggle<CR>
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
