@@ -18,7 +18,7 @@
 	url = git://github.com/kien/ctrlp.vim
 [submodule "bundle/vim-wombat"]
 	path = bundle/vim-wombat
-	url = git://github.com/emandres/vim-wombat
+	url = https://github.com/cschlueter/vim-wombat.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git

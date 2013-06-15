@@ -6,7 +6,8 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-colorscheme wombat
+set background=dark
+colorscheme solarized
 
 " Windows customizations - set font to Consolas and maximize the window, since
 " GVim doesn't remember window size.
