@@ -7,7 +7,8 @@ Unix
 ln -s ~/.vim/dotvimrc ~/.vimrc
 cd ~/.vim
 git submodule init
-git submodule update```
+git submodule update
+```
 
 
 Windows
@@ -16,4 +17,5 @@ Windows
 cp ~/vimfiles/_vimrc ~
 cd ~\vimfiles
 git submodule init
-git submodule update```
+git submodule update
+```
