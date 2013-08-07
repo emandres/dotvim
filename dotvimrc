@@ -64,7 +64,8 @@ endif
 map <F1> <nop>
 
 " Disable all bells
-set vb t_vb=
+set noeb vb t_vb=
+autocmd GUIENTER * set vb t_vb=
 
 nnoremap <leader>9 :RainbowParenthesesToggle<CR>
 au Syntax * RainbowParenthesesLoadRound
